@@ -36,3 +36,4 @@ function custom_register_book_cpt() {
     new Custom_Post_Generator_Fn($args, $labels);
 }
 add_action('init', 'custom_register_book_cpt', 0);
+```
