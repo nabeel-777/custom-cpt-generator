@@ -19,7 +19,7 @@ A lightweight, reusable class for quickly registering custom post types in WordP
 
 Add the following to a plugin or theme:
 
-```
+```php
 function custom_register_book_cpt() {
     $args = [
         'slug'          => 'books',
@@ -36,5 +36,3 @@ function custom_register_book_cpt() {
     new Custom_Post_Generator_Fn($args, $labels);
 }
 add_action('init', 'custom_register_book_cpt', 0);
-
-```
